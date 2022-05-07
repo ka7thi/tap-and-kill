@@ -1,0 +1,424 @@
+.curtain {
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.--winLeft,
+.--winLeftReturn,
+.--loseLeft,
+.--loseLeftReturn {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    background-color: green;
+    animation-name: winLeftAnimation;
+    animation-duration: 2000ms; 
+}
+
+.--winRight,
+.--winRightReturn,
+.--loseRight,
+.--loseRightReturn {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 200%;
+    background-color: green;
+    animation-name: winRightAnimation;
+    animation-duration: 2000ms;
+}
+
+.--winLeftReturn {
+    animation-name: winLeftReturnAnimation;
+}
+
+.--winRightReturn {
+    animation-name: winRightReturnAnimation;
+}
+
+.--loseLeft {
+    background-color: red;
+    animation-name: loseLeftAnimation;
+}
+
+.--loseRight {
+    background-color: red;
+    animation-name: loseRightAnimation;
+}
+
+.--loseLeftReturn {
+    background-color: red;
+    animation-name: loseLeftReturnAnimation;
+}
+
+.--loseRightReturn {
+    background-color: red;
+    animation-name: loseRightReturnAnimation;
+}
+
+.startStartAnimation,
+.endStartAnimation,
+.startHowPlayAnimation,
+.endHowPlayAnimation,
+.startAboutAnimation,
+.endAboutAnimation,
+.startReturnAnimation,
+.endReturnAnimation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    animation-name: startStartAnimation;
+    animation-duration: 1000ms;
+}
+
+.endStartAnimation {animation-name: endStartAnimation;}
+.startHowPlayAnimation {animation-name: startHowPlayAnimation;}
+.endHowPlayAnimation {animation-name: endHowPlayAnimation;}
+.startAboutAnimation {animation-name: startAboutAnimation;}
+.endAboutAnimation {animation-name: endAboutAnimation;}
+.startReturnAnimation {animation-name: startReturnAnimation;}
+.endReturnAnimation {animation-name: endReturnAnimation;}
+
+.holdAnimation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1024px;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    } 
+    
+    .menu {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .menu__title {
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    
+    .menu__list {
+        list-style: none;
+    }
+    
+    .menu__button {
+        background-color: white;
+        border: none;
+        font-size: 2.5rem;
+    }
+    
+    .menu__return {
+        background-color: rgba(0, 0, 0, 0);
+        margin: 20px auto;
+        font-size: 2.5rem;
+        border: none;
+        transition: 300ms;
+    }
+    
+    .menu__button:hover {
+        cursor: pointer;
+        color: white;
+        text-shadow: 
+            -1px -1px 0px #000,
+            0px -1px 0px #000,
+            1px -1px 0px #000,
+            -1px  0px 0px #000,
+            1px  0px 0px #000,
+            -1px  1px 0px #000,
+            0px  1px 0px #000,
+            1px  1px 0px #000;
+        transform: scale(1.1);
+        transition: 300ms;
+    }
+    
+    .menu__return:hover {
+        cursor: pointer;
+        color: white;
+        text-shadow: 
+            -1px -1px 0px #000,
+            0px -1px 0px #000,
+            1px -1px 0px #000,
+            -1px  0px 0px #000,
+            1px  0px 0px #000,
+            -1px  1px 0px #000,
+            0px  1px 0px #000,
+            1px  1px 0px #000;
+        transform: scale(1.3);
+    }
+
+.--start {
+        position: fixed;
+        top: 3px;
+        right: 15px;
+    }
+    
+    .--end-game,
+    .--end-game-button {
+        color: white;
+        text-shadow: 
+            -1px -1px 0px #000,
+            0px -1px 0px #000,
+            1px -1px 0px #000,
+            -1px  0px 0px #000,
+            1px  0px 0px #000,
+            -1px  1px 0px #000,
+            0px  1px 0px #000,
+            1px  1px 0px #000;
+        transition: 300ms;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+    
+    .menu__author-photo {
+        width: 200px;
+        height: 200px;
+        margin: 20px 10px;
+        border-radius: 50%;
+        box-shadow: 0 0 30px grey;
+        filter: grayscale(100%);
+        transition: 500ms;
+    }
+    
+    .menu__author-photo:hover {
+        border-radius: 30%;
+        filter: grayscale(0%);
+    }
+    
+    .menu__text {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 10px;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    
+    .menu__link-box {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .menu__link {
+        margin: 10px 20px 30px 20px;
+        color: black;
+        transition: 300ms;
+    }
+    
+    .menu__link:link {
+        color: black;
+        transition: 300ms;
+    }
+    
+    .menu__link:first-child:hover {
+        color: #3b5998;
+        transform: scale(1.2);
+    }
+    
+    .menu__link:last-child:hover {
+        color: grey;
+        transform: scale(1.2);
+    }
+
+@keyframes startStartAnimation {
+    0% {
+        top: -100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes endStartAnimation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: -100%;
+    }
+}
+
+@keyframes startHowPlayAnimation {
+    0% {
+        top: 0;
+        left: -100%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes endHowPlayAnimation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 100%;
+        left: 0;
+    }
+}
+
+@keyframes startAboutAnimation {
+    0% {
+        top: 0;
+        left: 100%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes endAboutAnimation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 100%;
+        left: 0;
+    }
+}
+
+@keyframes startReturnAnimation {
+    0% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes endReturnAnimation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: -100%;
+        left: 0;
+    }
+}
+
+@keyframes winLeftAnimation {
+    0% {
+        top: 0;
+        left: -50%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes winRightAnimation {
+    0% {
+        top: 0;
+        left: 100%;
+    }
+    100% {
+        top: 0;
+        left: 50%;
+    }
+}
+
+@keyframes winLeftReturnAnimation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: -50%;
+    }
+}
+
+@keyframes winRightReturnAnimation {
+    0% {
+        top: 0;
+        left: 50%;
+    }
+    100% {
+        top: 0;
+        left: 100%;
+    }
+}
+
+@keyframes loseLeftAnimation {
+    0% {
+        top: 0;
+        left: -50%;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes loseRightAnimation {
+    0% {
+        top: 0;
+        left: 100%;
+    }
+    100% {
+        top: 0;
+        left: 50%;
+    }
+}
+
+@keyframes loseLeftReturnAnimation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: -50%;
+    }
+}
+
+@keyframes loseRightReturnAnimation {
+    0% {
+        top: 0;
+        left: 50%;
+    }
+    100% {
+        top: 0;
+        left: 100%;
+    }
+}

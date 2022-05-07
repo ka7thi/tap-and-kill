@@ -1,0 +1,24 @@
+[
+    {},
+    {
+        "id" : 1,
+        "name" : "Ork",
+        "attack" : 10,
+        "scores" : 100,
+        "cssStyleName" : "--orc"
+    },
+    {
+        "id" : 2,
+        "name" : "Silny Ork",
+        "attack" : 15,
+        "scores" : 200,
+        "cssStyleName" : "--very-strong-orc"
+    },
+    {
+        "id" : 3,
+        "name" : "Bardzo Silny Ork",
+        "attack" : 20,
+        "scores" : 300,
+        "cssStyleName" : "--strong-orc"
+    }
+]

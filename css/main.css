@@ -1,0 +1,193 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+/*    border: 1px solid black;*/
+}
+
+.game-window {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.interface {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-color: gray;
+}
+
+.interface__hp-container {
+    width: 220px;
+    height: 30px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: row;
+    z-index: 3;
+}
+
+.interface__hp-empty-bar {
+    width: 150px;
+    background-color: beige;
+}
+
+.interface__hp-busy-bar {
+    width: 100%;
+    height: 30px;
+    background-color: red;
+}
+
+.interface__hp-percentages-container {
+    width: 70px;
+    height: 30px;
+}
+
+.interface__hp-percentages {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3px 0;
+}
+
+.interface__score-container {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 1rem;
+    z-index: 3;
+}
+
+.interface__score {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.interface__skills-container {
+    width: 100%;
+    height: 62px;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 3;
+}
+
+.interface__skills-bar {
+    width: 462px;
+    height: 62px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.interface__skill {
+    width: 60px;
+    height: 60px;
+    margin: 1px 10px;
+}
+
+.interface__skill:first-child {
+    margin-left: 1px;
+}
+
+.interface__skill:last-child {
+    margin-right: 1px;
+}
+
+.interface__menu-open-button {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+}
+
+.interface__menu-container {
+    width: 250px;
+    position: absolute;
+    z-index: 4;
+    top: 1rem;
+    right: 1rem;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+}
+
+.interface__menu-button {
+    width: 100%;
+    height: 60px;
+    margin: 1px;
+    font-size: 1.2rem;
+}
+
+.--pointer:hover {
+    cursor: pointer;
+}
+
+.--display-none {
+    display: none;
+}
+
+.game__players-home-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game__players-home {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: crimson;
+    z-index: 2;
+}
+
+.game__enemy {
+    width: 100px;
+    height: 100px;
+    position: absolute;    
+    background-color: blue;
+    border: none;
+    z-index: 1;
+}
+
+.game__enemy-name {
+    position: absolute;
+    top: -25px;
+    left: -20%;
+    width: 140%;
+    height: 20px;
+    background-color: bisque;
+    color: black;
+    
+}
+
+.--orc {
+    background-color: green;
+}
+
+.--strong-orc {
+    background-color: cadetblue;
+}
+
+.--very-strong-orc {
+    background-color: aquamarine;
+}
+
+
